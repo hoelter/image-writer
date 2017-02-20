@@ -2,7 +2,6 @@
 using System.Drawing.Drawing2D;
 using System.Drawing.Imaging;
 using System.Drawing.Text;
-using System.Runtime.Remoting.Messaging;
 
 namespace WritingTextOnImage
 {
@@ -13,7 +12,7 @@ namespace WritingTextOnImage
             using (var graphics = Graphics.FromImage(image))
             {
                 graphics.SmoothingMode = SmoothingMode.AntiAlias;
-                // Image is 600x600 pixels, this places it upper-center
+                // Image is 444 x 248 pixels, this should place text center
                 PointF writeLocation = new PointF(222f, 124f);
                 var format = new StringFormat { Alignment = StringAlignment.Center };
 
